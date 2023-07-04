@@ -26,7 +26,7 @@ app.post("/", (req, res) => {
     const client = require("@mailchimp/mailchimp_marketing");
 
     const run = async () => {
-        const response = await client.lists.batchListMembers("af3e674d94a", {
+        const response = await client.lists.batchListMembers("f3e674d94a", {
             members: [{
                 email_address: email,
                 status: "subscribed",
